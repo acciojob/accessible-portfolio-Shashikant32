@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Main content -->
+    <header role="banner">
+        <div class="container">
+            <!-- Heading -->
+            <h1 role="heading">Welcome to My Accessible Portfolio</h1>
+        </div>
+    </header>
 
+    <!-- Navigation Bar -->
+    <nav role="navigation">
+        <div class="container">
+            <ul role="list">
+                <li role="listitem"><a href="#about">About Me</a></li>
+                <li role="listitem"><a href="#skills">Skills</a></li>
+                <li role="listitem"><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content sections -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about" role="region">
+            <div class="container">
+                <h2 role="heading">About Me</h2>
+                <img src="your-image-url.jpg" alt="A photo of me" role="img" height="200px">
+                <p>I am a passionate web developer with experience in various front-end and back-end technologies.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" role="region">
+            <div class="container">
+                <h2 role="heading">Skills</h2>
+                <ul role="list">
+                    <li role="listitem">HTML & CSS</li>
+                    <li role="listitem">JavaScript</li>
+                    <li role="listitem">React.js</li>
+                    <li role="listitem">Node.js</li>
+                    <li role="listitem">Git & GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" role="region">
+            <div class="container">
+                <h2 role="heading">Projects</h2>
+                <ul role="list">
+                    <li role="listitem"><strong>Personal Portfolio</strong> - A personal website showcasing my projects and skills.</li>
+                    <li role="listitem"><strong>Task Management App</strong> - A React app for managing tasks and to-do lists.</li>
+                    <li role="listitem"><strong>Blog Website</strong> - A blogging platform built with Node.js and Express.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 My Accessible Portfolio</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
